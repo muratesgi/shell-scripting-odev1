@@ -10,7 +10,7 @@ for user in $USERS; do
     tar -czf $BACKUP_DIR/$user-$DATE.tar.gz /home/$user
 done
 
-05 23 * * * /home/yedekleme_odevi/backup.sh
+05 23 * * * /home/yedekleme_odevi.sh
 
 LOGFILE=”backup-$DATE.log” > /mnt 
 echo "$LOGFILE" 
